@@ -5,6 +5,7 @@ import thunk from "redux-thunk";
 
 import PostReducer from './reducers';
 import Posts from './Posts';
+import PostForm from './PostForm';
 
 import './App.css';
 
@@ -18,7 +19,10 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
+      <div>
         <Posts />
+        <PostForm />
+      </div>
       </Provider>
     );
   }
